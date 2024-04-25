@@ -1,9 +1,17 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <nav class="bg-gray-800 py-4 px-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <!-- Logo -->
+      <p href="#" class="text-white text-xl font-bold">3D Reconstruction</p>
+      <!-- Menu -->
+      <ul class="flex space-x-4">
+        <li><router-link to="/">Home</router-link> |</li>
+        <li></li>
+        <router-link to="/Result">Result</router-link>
+      </ul>
+    </div>
   </nav>
-  <router-view/>
+  <router-view />
 </template>
 
 <style>
